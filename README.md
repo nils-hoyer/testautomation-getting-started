@@ -1,10 +1,7 @@
 # Playwright Test Automation - Getting Started
 
-Dieses Repository ist die Basis für die Kurse auf https://www.codesurfer.io/kurse
-
-## 🚀 Schnellstart
-
-Folge diesen Schritten, um deine Playwright-Testumgebung einzurichten:
+Dieses Repository ist die Basis für die Kurse auf https://www.codesurfer.io/kurse.
+Folge dieser Anletitung, um deine Playwright Testumgebung einzurichten:
 
 ### Voraussetzungen
 
@@ -13,11 +10,11 @@ Folge diesen Schritten, um deine Playwright-Testumgebung einzurichten:
    - Installiere VS Code auf deinem System
 
 2. **Playwright Extension installieren**
-   - Öffne VS Code
-   - Gehe zu Extensions (Strg+Shift+X / Cmd+Shift+X)
-   - Suche nach "Playwright Test for VS Code" und installiere die Extension
-   
-   ![Playwright Extension](https://via.placeholder.com/800x400/4A90E2/FFFFFF?text=Playwright+Extension+Installation)
+- Öffne VS Code
+    - Gehe zu Extensions
+    - Suche nach "Playwright Test for VS Code" und installiere die Extension
+    
+    ![Playwright Extension](docs/playwright-extension.png)
 
 3. **Node.js installieren**
    - Benötigt: Node.js Version 20 oder neuer
@@ -29,15 +26,15 @@ Folge diesen Schritten, um deine Playwright-Testumgebung einzurichten:
    - Klicke auf den grünen "Code" Button und dann "Download ZIP"
    - Oder nutze Git: `git clone <repository-url>`
    
-   ![Repository Download](https://via.placeholder.com/800x300/28A745/FFFFFF?text=Repository+Download+Button)
+    ![Repository Download](docs/repo-checkout.png)
 
 5. **Projekt in VS Code öffnen**
-   - Öffne VS Code
-   - Datei > Ordner öffnen... und wähle den heruntergeladenen Ordner
-   - Die NPM-Skripte findest du links im Explorer unter "NPM SCRIPTS"
-   
-   ![VS Code NPM Scripts](https://via.placeholder.com/600x400/6F42C1/FFFFFF?text=NPM+Scripts+Panel)
-
+- Öffne VS Code
+    - Datei > Ordner öffnen... und wähle den heruntergeladenen Ordner
+    - Die NPM-Skripte findest du links im Explorer unter "NPM SkRIPTS"
+    
+    ![VS Code NPM Scripts](docs/npm-scripts.png)
+    
 ### Installation und Setup
 
 **Wichtig**: Die Ausgaben der folgenden Befehle siehst du im Terminal-Tab im unteren Bereich von VS Code.
@@ -59,10 +56,8 @@ Folge diesen Schritten, um deine Playwright-Testumgebung einzurichten:
    npm run test
    ```
    - Führt die Beispiel-Tests aus
-   - Wenn alle Tests erfolgreich sind ✅, ist dein Setup korrekt!
 
-## ✅ Fertig!
 
-Wenn alle Tests erfolgreich durchgelaufen sind, bist du bereit für den Kurs!
+Wenn die Tests erfolgreich durchgelaufen sind, bist du bereit für den Kurs!
 
-Happy Testing! 🎭🚀
+Happy Testing! 🎭 🚀
