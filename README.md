@@ -42,20 +42,17 @@ Folge dieser Anleitung, um deine Playwright Testumgebung einzurichten:
 ![VS Code NPM Scripts](docs/npm-scripts.png)
 
 6. **Pakete installieren**
-   ```bash
-   npm install
-   ```
+   - Starte Skript "install:npm"
+   - Oder nutze Bash `npm install`
    - Installiert Playwright und alle benötigten Pakete
 
 7. **Browser herunterladen**
-   ```bash
-   npx playwright install
-   ```
+   - Starte Skript "install:playwright"
+   - Oder nutze Bash `npx playwright install`
    - Lädt die Test-Browser herunter (Chromium, Firefox, WebKit)
 8. **Setup testen**
-    ```bash
-    npm run test
-    ```
+   - Starte Skript "test"
+   - Oder nutze Bash `npx playwright test`
     - Führt die Beispiel-Tests aus und verifiziert dein Setup
 
 Wenn die Tests erfolgreich durchgelaufen sind, bist du bereit für den Kurs!
