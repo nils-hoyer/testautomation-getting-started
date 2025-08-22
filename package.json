@@ -1,8 +1,6 @@
 {
   "name": "playwright-getting-started",
-  "version": "1.0.0",
   "description": "A getting started repository for Playwright test automation course",
-  "main": "index.js",
   "scripts": {
     "install:npm": "npm install",
     "install:playwright": "playwright install",
