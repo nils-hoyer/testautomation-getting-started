@@ -1,0 +1,40 @@
+{
+  "name": "playwright-getting-started",
+  "version": "1.0.0",
+  "description": "A getting started repository for Playwright test automation course",
+  "main": "index.js",
+  "scripts": {
+    "install:npm": "npm install",
+    "install:playwright": "playwright install",
+    "install:playwright2": "npm init playwright",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "codegen": "playwright codegen"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "automation",
+    "e2e"
+  ],
+  "author": "nilshoyer",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nils-hoyer/testautomation-getting-started.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nils-hoyer/testautomation-getting-started/issues"
+  },
+  "homepage": "https://github.com/nils-hoyer/testautomation-getting-started#readme"
+}
