@@ -1,7 +1,7 @@
 # Playwright Test Automation - Getting Started
 
 Dieses Repository ist die Basis für die Kurse auf https://www.codesurfer.io/kurse.
-Folge dieser Anletitung, um deine Playwright Testumgebung einzurichten:
+Folge dieser Anleitung, um deine Playwright Testumgebung einzurichten:
 
 ### Voraussetzungen
 
@@ -19,44 +19,44 @@ Folge dieser Anletitung, um deine Playwright Testumgebung einzurichten:
 3. **Node.js installieren**
    - Benötigt: Node.js Version 20 oder neuer
    - Download: https://nodejs.org/en/download
+   - Oder nutze NVM: `nvm install 22`
 
-### Repository Setup
+### Projekt Setup
 
-4. **Repository herunterladen**
+4. **Dateien herunterladen**
    - Klicke auf den grünen "Code" Button und dann "Download ZIP"
-   - Oder nutze Git: `git clone <repository-url>`
+   - Oder nutze Git: `git clone git@github.com:nils-hoyer/testautomation-getting-started.git`
    
     ![Repository Download](docs/repo-checkout.png)
 
 5. **Projekt in VS Code öffnen**
 - Öffne VS Code
     - Datei > Ordner öffnen... und wähle den heruntergeladenen Ordner
-    - Die NPM-Skripte findest du links im Explorer unter "NPM SkRIPTS"
     
-    ![VS Code NPM Scripts](docs/npm-scripts.png)
-    
-### Installation und Setup
+### Playwright einrichten
 
 **Wichtig**: Die Ausgaben der folgenden Befehle siehst du im Terminal-Tab im unteren Bereich von VS Code.
 
-6. **Abhängigkeiten installieren**
+**Tipp**: Die folgenden Befehle findest du auch links im Explorer unter "NPM SCRIPTS" - dann kannst du sie per Klick ausführen.
+
+![VS Code NPM Scripts](docs/npm-scripts.png)
+
+6. **Pakete installieren**
    ```bash
    npm install
    ```
    - Installiert Playwright und alle benötigten Pakete
 
-7. **Browser installieren**
+7. **Browser herunterladen**
    ```bash
    npx playwright install
    ```
    - Lädt die Test-Browser herunter (Chromium, Firefox, WebKit)
-
-8. **Setup überprüfen**
-   ```bash
-   npm run test
-   ```
-   - Führt die Beispiel-Tests aus
-
+8. **Setup testen**
+    ```bash
+    npm run test
+    ```
+    - Führt die Beispiel-Tests aus und verifiziert dein Setup
 
 Wenn die Tests erfolgreich durchgelaufen sind, bist du bereit für den Kurs!
 
