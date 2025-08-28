@@ -5,9 +5,6 @@
     "install:npm": "npm install",
     "install:playwright": "playwright install",
     "test": "playwright test",
-    "test:ui": "playwright test --ui",
-    "test:debug": "playwright test --debug",
-    "codegen": "playwright codegen"
   },
   "keywords": [
     "playwright",
