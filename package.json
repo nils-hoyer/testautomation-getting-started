@@ -4,7 +4,7 @@
   "scripts": {
     "install:npm": "npm install",
     "install:playwright": "playwright install",
-    "test": "playwright test",
+    "test": "playwright test"
   },
   "keywords": [
     "playwright",
