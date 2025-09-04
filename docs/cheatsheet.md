@@ -148,6 +148,7 @@ await expect(locator).toBeHidden()
 await expect(locator).toHaveText('exakter text')
 await expect(locator).toContainText('teil-text')
 await expect(locator).toHaveText(/regex.*muster/)
+await expect(page.locator('ul > li')).toHaveText(['Text 1', 'Text 2', 'Text 3']);
 
 // Element-Eigenschaften
 await expect(locator).toBeEnabled()
@@ -157,6 +158,7 @@ await expect(locator).toBeEmpty()
 
 // Formular-Werte
 await expect(locator).toHaveValue('input-value')
+await expect(page.locator('select option')).toHaveValues(['red', 'green', 'blue']);
 
 // Anzahl
 await expect(locator).toHaveCount(5)
