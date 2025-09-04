@@ -4,7 +4,7 @@ import { defineConfig, devices } from '@playwright/test';
 export default defineConfig({
   projects: [
         {
-      name: 'chromium',
+      name: 'Chrome Desktop',
       use: { ...devices['Desktop Chrome'] },
     },
   ]
