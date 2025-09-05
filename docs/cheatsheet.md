@@ -135,7 +135,6 @@ await expect(page).toHaveURL(/.*beispiel.*/)
 // Seitentitel
 await expect(page).toHaveTitle('Seitentitel')
 await expect(page).toHaveTitle(/teil.*titel/)
-
 ```
 
 ### Element-Überprüfungen
@@ -172,6 +171,52 @@ await expect(locator).not.toContainText('unerwünschter text')
 ```
 
 Weitere Informationen zu Assertions: [Playwright Test Assertions Dokumentation](https://playwright.dev/docs/test-assertions)
+
+
+## Page Object Pattern
+
+### Page Object
+```typescript
+// pages/login-page.ts
+export class LoginPage {
+
+  // Locators
+  constructor(page) {
+    this.page = page;
+    this.emailInput = this.page.getByTestId('login-email');
+    this.passwordInput = this.page.getByTestId('login-password');
+    this.loginButton = this.page.getByTestId('login-button');
+  }
+
+  // Actions
+  async goto() {
+    await this.page.goto('/login')
+  }
+  async login(email, password) {
+    await this.emailInput.fill(email)
+    await this.passwordInput.fill(password)
+    await this.loginButton.click()
+  }
+
+}
+```
+
+### Page Object im Test verwenden
+```typescript
+import { test, expect } from '@playwright/test'
+import { LoginPage } from '../pages/login-page'
+
+test('Login mit Page Object', async ({ page }) => {
+  const loginPage = new LoginPage(page)
+  
+  await loginPage.goto()
+  await loginPage.login('max@mail.de', '12345')
+  
+  await expect(page).toHaveURL('/')
+})
+```
+
+Weitere Informationen zu Page Object: [Playwright Test Page Object Dokumentation](https://playwright.dev/docs/pom)
 
 ### CLI-Befehle
 
