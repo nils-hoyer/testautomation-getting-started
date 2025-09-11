@@ -4,7 +4,7 @@
 
 ## Test-Struktur
 
-### Grundlegender Test
+#### Grundlegender Test
 ```typescript
 import { test, expect } from '@playwright/test'
 
@@ -15,7 +15,7 @@ test('Test-Beschreibung', async ({ page }) => {
 })
 ```
 
-### Test deaktivieren
+#### Test deaktivieren
 ```typescript
 // Test überspringen
 test.skip('defekter Test', async ({ page }) => {
@@ -25,7 +25,7 @@ test.skip('defekter Test', async ({ page }) => {
 
 ## Locators
 
-### Grundlegende Locators
+#### Grundlegende Locators
 Das sind die empfohlenen Selektoren. Priorität in der angegebenen Reihenfolge.
 
 ```typescript
@@ -42,7 +42,7 @@ page.getByText(/willkommen/i) // Groß-/Kleinschreibung ignorieren
 
 ```
 
-### CSS Locators
+#### CSS Locators
 Falls notwendig könnt ihr auf CSS Selektoren zurückgreifen.
 
 ```typescript
@@ -56,7 +56,7 @@ page.locator('#container >> .item')
 page.locator('.form').locator('input[type="submit"]')
 ```
 
-### Locators filtern
+#### Locators filtern
 ```typescript
 // Nach Text filtern
 page.locator('.items').filter({ hasText: 'Item 3' })
@@ -74,14 +74,14 @@ Weitere Informationen zu Locators: [Playwright Locators Dokumentation](https://p
 
 ## Actions
 
-### Navigation
+#### Navigation
 ```typescript
 // Zu URL navigieren
 await page.goto('https://example.com')
 await page.goto('/relativer-pfad')
 ```
 
-### Klicks und Interaktionen
+#### Klicks und Interaktionen
 ```typescript
 // Klicken
 await page.locator('button').click()
@@ -94,7 +94,7 @@ await page.locator('.menu').hover()
 await page.locator('#source').dragTo(page.locator('#target'))
 ```
 
-### Formular-Interaktionen
+#### Formular-Interaktionen
 ```typescript
 // Eingabefeld ausfüllen
 await page.locator('input').fill('text')
@@ -115,7 +115,7 @@ await page.locator('input[type="checkbox"]').uncheck()
 await page.setInputFiles('input[type="file"]', 'path/to/file.txt')
 ```
 
-### Tastatur und Maus
+#### Tastatur und Maus
 ```typescript
 // Tastenkombinationen
 await page.keyboard.press('Enter')
@@ -126,7 +126,7 @@ Weitere Informationen zu Actions: [Playwright Input Dokumentation](https://playw
 
 ## Assertions
 
-### Seiten-Überprüfungen
+#### Seiten-Überprüfungen
 ```typescript
 // Seiten-URL
 await expect(page).toHaveURL('https://example.com')
@@ -137,7 +137,7 @@ await expect(page).toHaveTitle('Seitentitel')
 await expect(page).toHaveTitle(/teil.*titel/)
 ```
 
-### Element-Überprüfungen
+#### Element-Überprüfungen
 ```typescript
 // Sichtbarkeit
 await expect(locator).toBeVisible()
@@ -163,7 +163,7 @@ await expect(page.locator('select option')).toHaveValues(['red', 'green', 'blue'
 await expect(locator).toHaveCount(5)
 ```
 
-### Negationen
+#### Negationen
 ```typescript
 // .not für negative Überprüfungen verwenden
 await expect(locator).not.toBeEmpty()
@@ -175,7 +175,7 @@ Weitere Informationen zu Assertions: [Playwright Test Assertions Dokumentation](
 
 ## Page Object Pattern
 
-### Page Object
+#### Page Object
 ```typescript
 // pages/login-page.ts
 export class LoginPage {
@@ -201,7 +201,7 @@ export class LoginPage {
 }
 ```
 
-### Page Object im Test verwenden
+#### Page Object im Test verwenden
 ```typescript
 import { test, expect } from '@playwright/test'
 import { LoginPage } from '../pages/login-page'
@@ -218,7 +218,7 @@ test('Login mit Page Object', async ({ page }) => {
 
 Weitere Informationen zu Page Object: [Playwright Test Page Object Dokumentation](https://playwright.dev/docs/pom)
 
-### CLI-Befehle
+#### CLI-Befehle
 
 ```bash
 # Alle Tests ausführen
