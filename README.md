@@ -25,7 +25,7 @@ Folge dieser Anleitung, um deine Playwright Testumgebung einzurichten:
 
 4. **Dateien herunterladen**
    - Klicke auf den grünen "Code" Button und dann "Download ZIP"
-   - Oder nutze Git: `git clone git@github.com:nils-hoyer/testautomation-getting-started.git`
+   - Oder nutze Git: `git clone https://github.com/nils-hoyer/testautomation-getting-started.git`
    
     ![Repository Download](docs/repo-checkout.png)
 
